@@ -57,50 +57,86 @@
                 </a>
             </div>
         </div>
+
+        <!-- Place the carousel here -->
+        <div id="profileCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/1.jpg" class="d-block w-100 rounded" alt="Sample 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/2.jpg" class="d-block w-100 rounded" alt="Sample 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/3.jpg" class="d-block w-100 rounded" alt="Sample 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/4.jpg" class="d-block w-100 rounded" alt="Sample 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/5.jpg" class="d-block w-100 rounded" alt="Sample 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#profileCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#profileCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         <hr>
 
         <section class="mb-4">
             <h2 class="text-primary">Professional Experience</h2>
             <ol class="list-group list-group-numbered">
-                <li class="list-group-item mb-3">
-                    <h3 class="h5 mb-1">Computer Programmer II <span class="text-muted">(2015-Present)</span></h3>
-                    <div class="mb-2"><strong>Department of Education Regional Office X</strong></div>
-                    <ul>
-                        <li>Implemented national and regional ICT policies in line with strategic plans, contributing to 100% completion of targeted ICT initiatives on schedule.</li>
-                        <li>Deployed and maintained web-based applications using HTML and PHP, improving staff workflow efficiency and productivity by 40%.</li>
-                        <li>Assisted in upgrading the server system, increasing system speed by 30% and reducing unplanned downtime by 50%.</li>
-                        <li>Designed and enforced a server backup and recovery plan, minimizing potential data loss and reducing recovery time by 80%.</li>
-                        <li>Managed over 1000 user accounts and access permissions, ensuring strict compliance with internal IT security policies.</li>
-                        <li>Provided timely technical support to end-users, resolving hardware and software issues with a 95% first-contact resolution rate and improving user satisfaction by 50%.</li>
-                        <li>Increased website traffic by 25% through effective homepage content curation and social media promotion.</li>
-                        <li>Directed and produced over 20 high-quality live stream events, including regional launches and training workshops, enhancing stakeholder engagement.</li>
-                    </ul>
-                </li>
-                <li class="list-group-item mb-3">
-                    <h3 class="h5 mb-1">Administrative Assistant <span class="text-muted">(2013-2015)</span></h3>
-                    <div class="mb-2"><strong>Department of Education Regional Office X</strong></div>
-                    <ul>
-                        <li>Handled front desk duties, including calls, visitor reception, and inquiry routing.</li>
-                        <li>Managed office supplies, inventory, and procurement to ensure smooth operations.</li>
-                        <li>Processed and distributed correspondence (emails, letters, faxes) to relevant staff.</li>
-                        <li>Prepared reports, memos, and presentations as needed.</li>
-                        <li>Maintained confidentiality and handled sensitive information with discretion.</li>
-                        <li>Provided technical support and resolved hardware/software issues, improving user satisfaction by 50%.</li>
-                    </ul>
-                </li>
-            </ol>
-        </section>
-
-        <section class="mb-4">
-            <h2 class="text-primary">Education</h2>
-            <ol class="list-group list-group-numbered">
-                <li class="list-group-item">
-                    <h3 class="h6 mb-1">Bachelor of Science in Computer Science</h3>
-                    <div class="mb-1"><strong>Xavier University - Ateneo de Cagayan (2009 - 2013)</strong></div>
-                </li>
-            </ol>
-        </section>
-
+                <div class="accordion mb-3" id="experienceAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingProgrammer">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProgrammer" aria-expanded="true" aria-controls="collapseProgrammer">
+                                Computer Programmer II <span class="text-muted ms-2">(2015-Present)</span>
+                            </button>
+                        </h2>
+                        <div id="collapseProgrammer" class="accordion-collapse collapse show" aria-labelledby="headingProgrammer" data-bs-parent="#experienceAccordion">
+                            <div class="accordion-body">
+                                <div class="mb-2"><strong>Department of Education Regional Office X</strong></div>
+                                <ul>
+                                    <li>Implemented national and regional ICT policies in line with strategic plans, contributing to 100% completion of targeted ICT initiatives on schedule.</li>
+                                    <li>Deployed and maintained web-based applications using HTML and PHP, improving staff workflow efficiency and productivity by 40%.</li>
+                                    <li>Assisted in upgrading the server system, increasing system speed by 30% and reducing unplanned downtime by 50%.</li>
+                                    <li>Designed and enforced a server backup and recovery plan, minimizing potential data loss and reducing recovery time by 80%.</li>
+                                    <li>Managed over 1000 user accounts and access permissions, ensuring strict compliance with internal IT security policies.</li>
+                                    <li>Provided timely technical support to end-users, resolving hardware and software issues with a 95% first-contact resolution rate and improving user satisfaction by 50%.</li>
+                                    <li>Increased website traffic by 25% through effective homepage content curation and social media promotion.</li>
+                                    <li>Directed and produced over 20 high-quality live stream events, including regional launches and training workshops, enhancing stakeholder engagement.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion mb-3" id="experienceAccordion2">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingAdminAssistant">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdminAssistant" aria-expanded="false" aria-controls="collapseAdminAssistant">
+                                Administrative Assistant <span class="text-muted ms-2">(2013-2015)</span>
+                            </button>
+                        </h2>
+                        <div id="collapseAdminAssistant" class="accordion-collapse collapse" aria-labelledby="headingAdminAssistant" data-bs-parent="#experienceAccordion2">
+                            <div class="accordion-body">
+                                <div class="mb-2"><strong>Department of Education Regional Office X</strong></div>
+                                <ul>
+                                    <li>Handled front desk duties, including calls, visitor reception, and inquiry routing.</li>
+                                    <li>Managed office supplies, inventory, and procurement to ensure smooth operations.</li>
+                                    <li>Processed and distributed correspondence (emails, letters, faxes) to relevant staff.</li>
+                                    <li>Prepared reports, memos, and presentations as needed.</li>
+                                    <li>Maintained confidentiality and handled sensitive information with discretion.</li>
+                                    <li>Provided technical support and resolved hardware/software issues, improving user satisfaction by 50%.</li>
+                                 </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         <section class="mb-4">
             <h2 class="text-primary">Certifications</h2>
             <ul class="list-group">
@@ -125,30 +161,42 @@
             <h2 class="text-primary">Technical Skills</h2>
             <div class="row">
                 <div class="col-md-4 mb-3">
-                    <h3 class="h6">Proficient In / Experienced With:</h3>
-                    <ul>
-                        <li>Operating Systems: Windows 10/11</li>
-                        <li>Programming Languages: HTML, PHP, JavaScript</li>
-                        <li>Web Development: Apache, MySQL, XAMPP</li>
-                        <li>Networking & Infrastructure: Server setup and maintenance, LAN/WAN configuration, Router/Switch configuration</li>
-                        <li>System Administration: User account management, server monitoring, system backup and recovery</li>
-                        <li>Multimedia & Content Management: OBS Studio (live streaming), Canva, WordPress, Joomla, Social Media Management</li>
-                        <li>Tools & Platforms: Microsoft 365 Suite (Excel, Word, PowerPoint, Teams), Google Workspace</li>
-                    </ul>
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="h6 card-title">Proficient In / Experienced With:</h3>
+                            <ul class="mb-0">
+                                <li>Operating Systems: Windows 10/11</li>
+                                <li>Programming Languages: HTML, PHP, JavaScript</li>
+                                <li>Web Development: Apache, MySQL, XAMPP</li>
+                                <li>Networking & Infrastructure: Server setup and maintenance, LAN/WAN configuration, Router/Switch configuration</li>
+                                <li>System Administration: User account management, server monitoring, system backup and recovery</li>
+                                <li>Multimedia & Content Management: OBS Studio (live streaming), Canva, WordPress, Joomla, Social Media Management</li>
+                                <li>Tools & Platforms: Microsoft 365 Suite (Excel, Word, PowerPoint, Teams), Google Workspace</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <h3 class="h6">Intermediate Knowledge Of:</h3>
-                    <ul>
-                        <li>Cybersecurity Tools: Fortinet - Basic firewall configuration</li>
-                        <li>Web Framework: CodeIgniter, Laravel</li>
-                    </ul>
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="h6 card-title">Intermediate Knowledge Of:</h3>
+                            <ul class="mb-0">
+                                <li>Cybersecurity Tools: Fortinet - Basic firewall configuration</li>
+                                <li>Web Framework: CodeIgniter, Laravel</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <h3 class="h6">Familiar With:</h3>
-                    <ul>
-                        <li>Cloud Services: Google Cloud</li>
-                        <li>Programming Languages: Python, Django</li>
-                    </ul>
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="h6 card-title">Familiar With:</h3>
+                            <ul class="mb-0">
+                                <li>Cloud Services: Google Cloud</li>
+                                <li>Programming Languages: Python, Django</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
