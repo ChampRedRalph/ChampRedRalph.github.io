@@ -8,7 +8,7 @@
 <body>
     <center>
         <p>
-            <img src="your-photo.jpg" alt="Ralph Simon Mabulay" style="width:140px; border-radius:50%; margin-bottom:10px;">
+            <img src="img/ralph.jpg" alt="Ralph Simon Mabulay" style="width:140px; border-radius:50%; margin-bottom:0px;">
             <h1>RALPH SIMON MABULAY</h1>
             +6309054257448, 
             ralphsimonmabulay@gmail.com,
