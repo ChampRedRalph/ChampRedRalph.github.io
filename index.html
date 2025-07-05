@@ -1,366 +1,965 @@
+<!--
+author: Boostraptheme
+author URL: https://boostraptheme.com
+License: Creative Commons Attribution 4.0 Unported
+License URL: https://creativecommons.org/licenses/by/4.0/
+-->
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ralph Simon Mabulay</title>
-    <!-- Bootstrap CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <style>
-        body.dark-mode {
-            background-color: #181a1b !important;
-            color: #e0e0e0 !important;
-        }
-        .dark-mode .bg-white,
-        .dark-mode .list-group-item,
-        .dark-mode .container,
-        .dark-mode .card,
-        .dark-mode .border-top {
-            background-color: #23272b !important;
-            color: #e0e0e0 !important;
-            border-color: #343a40 !important;
-        }
-        .dark-mode .text-primary {
-            color: #90caf9 !important;
-        }
-        .dark-mode a {
-            color: #90caf9 !important;
-        }
-        .theme-toggle-btn {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            z-index: 10;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>Profile Bootstrap Theme</title>
+
+    <!-- Global stylesheets -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="css/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="bg-light" id="mainBody">
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-4">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">RSM</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#prof">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#cert">Certifications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#dev">Development</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+
+<body id="page-top">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none  mx-0 px-0"><img src="img/logo-white.png" alt="" class="img-fluid"></span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        </span>
+      </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
-    <button class="btn btn-outline-secondary theme-toggle-btn" id="themeToggle" aria-label="Toggle theme">
-        <i class="bi bi-moon"></i>
-    </button>
-    <div class="container py-5">
-        <div class="text-center mb-4">
-            <img src="img/ralph.jpg" alt="Ralph Simon Mabulay" class="rounded-circle mb-3" style="width:140px;">
-            <h1 class="fw-bold mb-1">RALPH SIMON MABULAY</h1>
-            <div class="mb-2">
-                <span class="me-2"><i class="bi bi-telephone"></i> +6309054257448</span>
-                <span class="me-2"><i class="bi bi-envelope"></i> ralphsimonmabulay@gmail.com</span>
-            </div>
-            <div>
-                <a href="https://www.linkedin.com/in/ralph-simon-mabulay-77111b107/" target="_blank" class="me-2 text-decoration-none">
-                    <i class="bi bi-linkedin"></i> LinkedIn
-                </a>
-                <a href="https://ralphsimonmabulay.me" target="_blank" class="text-decoration-none">
-                    <i class="bi bi-globe"></i> ralphsimonmabulay.me
-                </a>
-            </div>
-        </div>
+    <div class="container-fluid p-0">
 
-        <!-- Place the carousel here -->
-        <div id="profileCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/1.jpg" class="d-block w-100 rounded" alt="Sample 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/2.jpg" class="d-block w-100 rounded" alt="Sample 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/3.jpg" class="d-block w-100 rounded" alt="Sample 3">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/4.jpg" class="d-block w-100 rounded" alt="Sample 3">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/5.jpg" class="d-block w-100 rounded" alt="Sample 3">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#profileCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#profileCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <hr>
+    <!--====================================================
+                        ABOUT
+    ======================================================-->
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+          <div class="my-auto" >
+              <img src="img/logo-s.png" class="img-fluid mb-3" alt="">
+              <h1 class="mb-0">Ralph Simon
+                <span class="text-primary">Mabulay</span>
+              </h1>
+              <div class="subheading mb-5">Empowering businesses with expert IT support, bridging technology and people for seamless success
+                  <!-- <a href="#">THEMSBIT</a> -->
+              </div>
+              <p class="mb-5" style="max-width: 500px;" >Experienced IT personnel with a demonstrated history of working in the government administration industry. Skilled in Technical Support, Web Design, Digital Marketing, Video Production and Editing, and Office Administration. Strong engineering professional with a Bachelor of Science in Computer Science focused in Computer and Information Sciences, General from Xavier University - Ateneo de Cagayan.</p>
+              <ul class="list-inline list-social-icons mb-0">
+                  <li class="list-inline-item">
+                      <a href="https://www.facebook.com/ralph.mabulay/" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+                  </li>
+                  <li class="list-inline-item">
+                      <a href="https://www.youtube.com/@geminiqhourmerd" target="_blank">
+                    <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+                  </li>
+                  <li class="list-inline-item">
+                      <a href="https://www.linkedin.com/in/ralph-simon-mabulay-77111b107/" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+                  </li>
+                  <li class="list-inline-item">
+                      <a href="https://github.com/ChampRedRalph " target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+                  </li>
+                   <li class="list-inline-item">
+                      <a href="https://www.coursera.org/learner/ralph-simon-mabulay-7081" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+                  </li>
+                  <li class="list-inline-item">
+                      <a href="https://learn.microsoft.com/en-us/users/ralphsimonmabulay-3809/" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-windows fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+                  </li>
+              </ul>
+          </div>
+      </section>
 
-        <section class="mb-4">
-            <h2 class="text-primary" id="prof">Professional Experience</h2>
-            <ol class="list-group list-group-numbered">
-                <div class="accordion mb-3" id="experienceAccordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingProgrammer">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProgrammer" aria-expanded="true" aria-controls="collapseProgrammer">
-                                Computer Programmer II <span class="text-muted ms-2">(2015-Present)</span>
-                            </button>
-                        </h2>
-                        <div id="collapseProgrammer" class="accordion-collapse collapse show" aria-labelledby="headingProgrammer" data-bs-parent="#experienceAccordion">
-                            <div class="accordion-body">
-                                <div class="mb-2"><strong>Department of Education Regional Office X</strong></div>
-                                <ul>
-                                    <li>Implemented national and regional ICT policies in line with strategic plans, contributing to 100% completion of targeted ICT initiatives on schedule.</li>
-                                    <li>Deployed and maintained web-based applications using HTML and PHP, improving staff workflow efficiency and productivity by 40%.</li>
-                                    <li>Assisted in upgrading the server system, increasing system speed by 30% and reducing unplanned downtime by 50%.</li>
-                                    <li>Designed and enforced a server backup and recovery plan, minimizing potential data loss and reducing recovery time by 80%.</li>
-                                    <li>Managed over 1000 user accounts and access permissions, ensuring strict compliance with internal IT security policies.</li>
-                                    <li>Provided timely technical support to end-users, resolving hardware and software issues with a 95% first-contact resolution rate and improving user satisfaction by 50%.</li>
-                                    <li>Increased website traffic by 25% through effective homepage content curation and social media promotion.</li>
-                                    <li>Directed and produced over 20 high-quality live stream events, including regional launches and training workshops, enhancing stakeholder engagement.</li>
+    <!--====================================================
+                        EXPERIENCE
+    ======================================================-->      
+      <section class="resume-section p-3 p-lg-5 " id="experience">
+          <div class="row my-auto">
+              <div class="col-12">
+                <h2 class="  text-center">Experience</h2>
+                <div class="mb-5 heading-border"></div>
+              </div>
+              <div class="resume-item col-md-6 col-sm-12 " > 
+                <div class="card mx-0 p-4 mb-5" style="border-color: #17a2b8; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
+                  <div class=" resume-content mr-auto">
+                      <h4 class="mb-3"><i class="fa fa-globe mr-3 text-info"></i> Computer Programmer II</h4>
+                      <ul>
+                        <li>Implemented national and regional ICT policies, ensuring timely achievement of goals and targets.</li>
+                        <li>Deployed and maintained software solutions using HTML and PHP, increasing operational efficiency and productivity.</li>
+                        <li>Assisted in the implementation of a new server system, resulting in a 30% boost in system speed and a 50% reduction in downtime.</li>
+                        <li>Monitored and troubleshot server systems, proactively resolving issues to maximize uptime and system availability.</li>
+                        <li>Developed and executed a comprehensive server backup and recovery plan, reducing data loss and downtime by 80%.</li>
+                        <li>Managed user accounts and access permissions across Microsoft O365, Google Workspace, and in-house systems, ensuring security and compliance.</li>
+                        <li>Collected and analyzed data to support reporting on the progress of the DepEd Computerization Program.</li>
+                        <li>Provided technical support, resolving hardware and software issues and achieving a 50% increase in user satisfaction.</li>
+                        <li>Increased website traffic by 25% through effective homepage management and social media promotion.</li>
+                        <li>Streamlined content uploading processes, reducing upload times for issuances and articles by 80%.</li>
+                        <li>Directed and produced high-quality live streams for events such as BigaTEN DepEd X, program launches, and online workshops.</li>
+                        <li>Upgraded network infrastructure to support new applications and services, resulting in a 30% increase in capacity and a 15% boost in speed.</li>
+                      </ul>
+                  </div>
+                  <div class="resume-date text-md-right">
+                      <span class="text-primary">June 2015 - Present</span>
+                  </div>
+                </div>  
+              </div>
+              <div class="resume-item col-md-6 col-sm-12">
+                <div class="card mx-0 p-4 mb-5" style="border-color: #ffc107; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
+                  <div class="resume-content mr-auto">
+                      <h4 class="mb-3"><i class="fa fa-laptop mr-3 text-warning"></i> Administrative Assistant/Technical Assistant</h4>
+                      <ul>
+                        <li>Managed the front desk by answering phones, greeting visitors, and directing inquiries to appropriate staff members, ensuring smooth office operations.</li>
+                        <li>Oversaw office supplies and inventory, including ordering and maintaining optimal stock levels to support daily activities.</li>
+                        <li>Handled office correspondence such as emails, letters, and faxes, distributing them efficiently to relevant personnel.</li>
+                        <li>Prepared and distributed reports, memos, and presentations as required, supporting management and team communication.</li>
+                        <li>Maintained confidentiality of sensitive information, handling all matters with professionalism and discretion.</li>
+                        <li>Troubleshot and resolved hardware and software issues for users, providing technical support and achieving a 50% increase in user satisfaction.</li>
+                      </ul>
+                  </div>
+                  <div class="resume-date text-md-right">
+                      <span class="text-primary">June 2013 - June 2015</span>
+                  </div>
+                </div>  
+              </div>
+              <!-- <div class="resume-item col-md-6 col-sm-12">
+                <div class="card mx-0 p-4 mb-5" style="border-color: #28a745; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
+                  <div class="resume-content mr-auto">
+                      <h4 class="mb-3"><i class="fa fa-camera mr-3 text-success"></i> Junior Web Designer</h4>
+                      <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                  </div>
+                  <div class="resume-date text-md-right">
+                      <span class="text-primary">July 2017 - December 2018</span>
+                  </div>
+                </div>  
+              </div>
+              <div class="resume-item col-md-6 col-sm-12">
+                <div class="card mx-0 p-4 mb-5" style="border-color: #2196f3; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
+                  <div class="resume-content mr-auto">
+                      <h4 class="mb-3"><i class="fa fa-area-chart mr-3 text-primary"></i> Web Design Intern</h4>
+                      <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                  </div>
+                  <div class="resume-date text-md-right">
+                      <span class="text-primary">September 2018 - June 2019</span> -->
+                  </div>
+                </div>  
+              </div>
+          </div>
+      </section>
+
+    <!--====================================================
+                        PORTFOLIO
+    ======================================================-->      
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="portfolio"> 
+          <div class="row my-auto">
+              <div class="col-12">
+                <h2 class="  text-center">Portfolio</h2>
+                <div class="mb-5 heading-border"></div>
+              </div>
+              <div class="col-md-12">
+                <div class="port-head-cont">
+                  <button class="btn btn-general btn-green filter-b" data-filter="all">All</button>
+                  <button class="btn btn-general btn-green filter-b" data-filter="consulting">Web Design</button>
+                  <button class="btn btn-general btn-green filter-b" data-filter="finance">Mobile Apps</button>
+                  <button class="btn btn-general btn-green filter-b" data-filter="marketing">Graphics Design</button> 
+                </div>
+              </div>
+          </div>
+          <div class="row my-auto">
+              <div class="col-sm-4 portfolio-item filter finance">
+                  <a class="portfolio-link" href="#portfolioModal4" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/p-4.jpg" alt="">
+                  </a>
+              </div>
+              <div class="col-sm-4 portfolio-item filter marketing">
+                  <a class="portfolio-link" href="#portfolioModal5" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/p-5.jpg" alt="">
+                  </a>
+              </div>
+              <div class="col-sm-4 portfolio-item filter consulting">
+                  <a class="portfolio-link" href="#portfolioModal6" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/p-6.jpg" alt="">
+                  </a>
+              </div>              
+              <div class="col-sm-4 portfolio-item filter consulting">
+                  <a class="portfolio-link" href="#portfolioModal7" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/p-7.jpg" alt="">
+                  </a>
+              </div>
+              <div class="col-sm-4 portfolio-item filter consulting">
+                  <a class="portfolio-link" href="#portfolioModal8" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/p-8.jpg" alt="">
+                  </a>
+              </div>
+              <div class="col-sm-4 portfolio-item filter finance">
+                  <a class="portfolio-link" href="#portfolioModal9" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/p-9.jpg" alt="">
+                  </a>
+              </div>              
+              <div class="col-sm-4 portfolio-item filter marketing">
+                  <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/p-1.jpg" alt="">
+                  </a>
+              </div>
+              <div class="col-sm-4 portfolio-item filter marketing">
+                  <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/p-2.jpg" alt="">
+                  </a>
+              </div>
+              <div class="col-sm-4 portfolio-item filter finance">
+                  <a class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/p-3.jpg" alt="">
+                  </a>
+              </div> 
+          </div>
+      </section>
+
+    <!--====================================================
+                        SKILLS
+    ======================================================-->       
+      <section class=" d-flex flex-column" id="skills">
+         <div class="p-lg-5 p-3 skill-cover">
+          <h3 class="text-center text-white">Coding Skills</h3>
+          <div class="row text-center my-auto "> 
+              <div class="col-md-3 col-sm-6">
+                  <div class="skill-item">
+                      <i class="fa fa-html5 fa-5x"></i>
+                      <h2><span class="counter"> 84 </span><span>%</span></h2>
+                      <p>HTML5</p>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <div class="skill-item">
+                      <i class="fa fa-css3 fa-5x"></i>
+                      <h2><span class="counter"> 95 </span><span>%</span></h2>
+                      <p>CSS3</p>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <div class="skill-item">
+                      <i class="fa fa-code fa-5x"></i>
+                      <h2><span class="counter"> 65 </span><span>%</span></h2>
+                      <p>JQuery</p>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <div class="skill-item">
+                      <i class="fa fa-globe fa-5x"></i>
+                      <h2><span class="counter"> 89 </span><span>%</span></h2>
+                      <p>PHP</p>
+                  </div>
+              </div>
+          </div>
+         </div> 
+      </section>
+
+    <!--====================================================
+                           AWARDS
+    ======================================================-->       
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+          <div class="row my-auto">
+              <div class="col-12">
+                <h2 class="  text-center">Awards</h2>
+                <div class="mb-5 heading-border"></div>
+              </div> 
+              <div class="main-award" id="award-box">
+                  <div class="award">
+                      <div class="award-icon"></div>
+                      <div class="award-content">
+                          <span class="date">2021</span>
+                          <h5 class="title">2021 Information Leaders Awards</h5>
+                          <p class="description">
+                                National Finalist – Most Outstanding in Social Media Management<br>
+                                National Finalist – Most Outstanding in Public Assistance Service<br>
+                                National Finalist – Most Outstanding in Information Dissemination (Broadcast)
+                          </p>
+                      </div>
+                  </div>
+                  <div class="award">
+                      <div class="award-icon"></div>
+                      <div class="award-content">
+                          <span class="date">2019</span>
+                          <h5 class="title">Award</h5>
+                          <p class="description">
+                              For exemplary Achievements in representing the Department in ICT -and technology-related endeavors
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section> 
+
+    <!--====================================================
+                          CONTACT
+    ======================================================-->       
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column">
+          <div class="row my-auto" id="contact"> 
+            <div class="col-md-8">
+              <div class="contact-cont">
+                <h3>CONTACT Us</h3>
+                <div class="heading-border-light"></div>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here.</p>
+              </div>   
+              <div class="row con-form">
+                <div class="col-md-12">
+                  <input type="text" name="full-name" placeholder="Full Name" class="form-control">
+                </div>
+                <div class="col-md-12">
+                  <input type="text" name="email" placeholder="Email Id" class="form-control">
+                </div>
+                <div class="col-md-12">
+                  <input type="text" name="subject" placeholder="Subject" class="form-control">
+                </div>
+                <div class="col-md-12"><textarea name="" id=""></textarea></div>
+                <div class="col-md-12 sub-but"><button class="btn btn-general btn-white" role="button">Send</button></div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mt-5"> 
+              <div class="contact-cont2"> 
+                <div class="contact-add contact-box-desc">
+                  <h3><i class="fa fa-map-marker cl-atlantis fa-2x"></i> Address</h3>
+                  <p>25, Dist town Street, Logn <br>
+                  California, US <br></p>
+                </div>
+                <div class="contact-phone contact-side-desc contact-box-desc">
+                  <h3><i class="fa fa-phone cl-atlantis fa-2x"></i> Phone</h3>
+                  <p>800 123 3456 <br>900 123 3457</p>
+                </div>
+                <div class="contact-mail contact-side-desc contact-box-desc">
+                  <h3><i class="fa fa-envelope-o cl-atlantis fa-2x"></i> Email</h3>
+                <address class="address-details-f"> 
+                  Fax: 800 123 3456 <br>
+                  Email: <a href="mailto:info@themsbit.com" class="">info@themsbit.com</a>
+                </address>
+                <ul class="list-inline social-icon-f top-data">
+                  <li><a href="https://www.facebook.com/ralph.mabulay/" target="_empty"><i class="fa top-social fa-facebook" style="color: #4267b2; border-color:#4267b2;"></i></a></li>
+                  <li><a href="https://www.youtube.com/@geminiqhourmerd" target="_empty"><i class="fa top-social fa-youtube" style="color: #FF0000; border-color:#FF0000;"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/ralph-simon-mabulay-77111b107/" target="_empty"><i class="fa top-social fa-linkedin" style="color: #0077b5; border-color:#0077b5;"></i></a></li>
+                </ul>
+                </div>
+              </div>
+            </div> 
+          </div>
+      </section>
+
+      <section class=" d-flex flex-column" id="maps">
+        <div id="map">
+          <div class="map-responsive">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6030.418742494061!2d-111.34563870463673!3d26.01036670629853!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1471908546569" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+
+<!--====================================================
+                    PORTFOLIO MODALS
+======================================================-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" >
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                      <div class="rl"></div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="row">
+                          <div class="modal-body">
+                              <div class="title-bar">
+                                <div class="col-md-12">
+                                  <h2 class="text-center">Our Project</h2>
+                                  <div class="heading-border"></div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <img class="img-fluid img-centered" src="img/portfolio/p-1.jpg" alt="">
+                                </div>
+                                <div class="col-md-6">
+                                  <p>Our new Project every processes had become fragmented; meaning quality and service were inconsistent. This lack of standardization was adversely impacting operating costs, productivity and customer satisfaction. For several years now Payfast has worked strategically with innovations as a means of developing new solutions, products and services. In line with this vision, Success was approached to find new payments solutions to offer Payfast customers on their website, including open invoice and partial payments options.</p>
+                                  <ul class="list-inline item-details">
+                                      <li>Client:
+                                          <strong>
+                                            <a href="#">Techs Soft</a>
+                                          </strong>
+                                      </li>
+                                      <li>Date:
+                                          <strong>
+                                            <a href="#">April 2018</a>
+                                          </strong>
+                                      </li>
+                                      <li>Service:
+                                          <strong>
+                                            <a href="#">Web Development</a>
+                                          </strong>
+                                      </li>
+                                  </ul>
+                                  <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                                      <i class="fa fa-times"></i> Close
+                                  </button>
+                              </div>
+                            </div>
+                          </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                <div class="row">
+                        <div class="modal-body">
+                            <div class="title-bar">
+                              <div class="col-md-12">
+                                <h2 class="text-center">Our Project</h2>
+                                <div class="heading-border"></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <img class="img-fluid img-centered" src="img/portfolio/p-2.jpg" alt="">
+                              </div>
+                              <div class="col-md-6">
+                                <p>Our new Project every processes had become fragmented; meaning quality and service were inconsistent. This lack of standardization was adversely impacting operating costs, productivity and customer satisfaction. For several years now Payfast has worked strategically with innovations as a means of developing new solutions, products and services. In line with this vision, Success was approached to find new payments solutions to offer Payfast customers on their website, including open invoice and partial payments options.</p>
+                                <ul class="list-inline item-details">
+                                    <li>Client:
+                                        <strong>
+                                          <a href="#">Techs Soft</a>
+                                        </strong>
+                                    </li>
+                                    <li>Date:
+                                        <strong>
+                                          <a href="#">April 2018</a>
+                                        </strong>
+                                    </li>
+                                    <li>Service:
+                                        <strong>
+                                          <a href="#">Web Development</a>
+                                        </strong>
+                                    </li>
                                 </ul>
+                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
                             </div>
+                          </div>
                         </div>
-                    </div>
-                </div>
-                <div class="accordion mb-3" id="experienceAccordion2">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingAdminAssistant">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdminAssistant" aria-expanded="false" aria-controls="collapseAdminAssistant">
-                                Administrative Assistant <span class="text-muted ms-2">(2013-2015)</span>
-                            </button>
-                        </h2>
-                        <div id="collapseAdminAssistant" class="accordion-collapse collapse" aria-labelledby="headingAdminAssistant" data-bs-parent="#experienceAccordion2">
-                            <div class="accordion-body">
-                                <div class="mb-2"><strong>Department of Education Regional Office X</strong></div>
-                                <ul>
-                                    <li>Handled front desk duties, including calls, visitor reception, and inquiry routing.</li>
-                                    <li>Managed office supplies, inventory, and procurement to ensure smooth operations.</li>
-                                    <li>Processed and distributed correspondence (emails, letters, faxes) to relevant staff.</li>
-                                    <li>Prepared reports, memos, and presentations as needed.</li>
-                                    <li>Maintained confidentiality and handled sensitive information with discretion.</li>
-                                    <li>Provided technical support and resolved hardware/software issues, improving user satisfaction by 50%.</li>
-                                 </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        <section class="mb-4">
-            <h2 class="text-primary" id="cert">Certifications</h2>
-            <table class="table table-striped table-bordered">
-                <thead class="table-primary">
-                    <tr>
-                        <th>Certification</th>
-                        <th>Year</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>I.S.P. (Information Systems Professional) Certification</td>
-                        <td>2024</td>
-                    </tr>
-                    <tr>
-                        <td>MikroTik Certified Network Associate (MTCNA)</td>
-                        <td>2022</td>
-                    </tr>
-                    <tr>
-                        <td>MikroTik Certified Routing Engineer (MTCRE)+</td>
-                        <td>2022</td>
-                    </tr>
-                    <tr>
-                        <td>MikroTik Certified User Management Engineer (MTCUME)</td>
-                        <td>2022</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section class="mb-4">
-            <h2 class="text-primary" id="dev">Professional Development</h2>
-            <table class="table table-striped table-bordered">
-                <thead class="table-primary">
-                    <tr>
-                        <th>Course / Training</th>
-                        <th>Year</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Google AI Essentials</td>
-                        <td>2024</td>
-                    </tr>
-                    <tr>
-                        <td>Foundations of Cybersecurity</td>
-                        <td>2024</td>
-                    </tr>
-                    <tr>
-                        <td>Technical Support Fundamentals</td>
-                        <td>2024</td>
-                    </tr>
-                    <tr>
-                        <td>DigitaljobsPH Training Social Media Marketing Course</td>
-                        <td>2021</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section class="mb-4">
-            <h2 class="text-primary" id="skills">Technical Skills</h2>
-            <div class="row">
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h3 class="h6 card-title">Proficient In / Experienced With:</h3>
-                            <ul class="mb-0">
-                                <li>Operating Systems: Windows 10/11</li>
-                                <li>Programming Languages: HTML, PHP, JavaScript</li>
-                                <li>Web Development: Apache, MySQL, XAMPP</li>
-                                <li>Networking & Infrastructure: Server setup and maintenance, LAN/WAN configuration, Router/Switch configuration</li>
-                                <li>System Administration: User account management, server monitoring, system backup and recovery</li>
-                                <li>Multimedia & Content Management: OBS Studio (live streaming), Canva, WordPress, Joomla, Social Media Management</li>
-                                <li>Tools & Platforms: Microsoft 365 Suite (Excel, Word, PowerPoint, Teams), Google Workspace</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h3 class="h6 card-title">Intermediate Knowledge Of:</h3>
-                            <ul class="mb-0">
-                                <li>Cybersecurity Tools: Fortinet - Basic firewall configuration</li>
-                                <li>Web Framework: CodeIgniter, Laravel</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h3 class="h6 card-title">Familiar With:</h3>
-                            <ul class="mb-0">
-                                <li>Cloud Services: Google Cloud</li>
-                                <li>Programming Languages: Python, Django</li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </section>
-
-        <section class="mb-4">
-            <h2 class="text-primary" id="contact">Contact Me</h2>
-            <form action="#" method="post" class="card p-4 shadow-sm bg-white">
-                <div class="mb-3">
-                    <label for="contactName" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="contactName" name="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="contactEmail" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="contactEmail" name="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="contactMessage" class="form-label">Message</label>
-                    <textarea class="form-control" id="contactMessage" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send</button>
-            </form>
-        </section>
-
-        <div class="text-center my-3">
-            <p class="fw-semibold">Connect with me through my social media pages and email:</p>
+            </div>
         </div>
-
-        <div class="text-center my-4">
-            <a href="https://www.facebook.com/ralph.mabulay/" target="_blank" class="mx-2" aria-label="Facebook">
-                <i class="bi bi-facebook" style="font-size: 2rem; color: #1877f3;"></i>
-            </a>
-            <a href="https://www.youtube.com/@geminiqhourmerd" target="_blank" class="mx-2" aria-label="YouTube">
-                <i class="bi bi-youtube" style="font-size: 2rem; color: #ff0000;"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/ralph-simon-mabulay-77111b107/" target="_blank" class="mx-2" aria-label="LinkedIn">
-                <i class="bi bi-linkedin" style="font-size: 2rem; color: #0a66c2;"></i>
-            </a>
-            <a href="mailto:ralphsimonmabulay@gmail.com" target="_blank" class="mx-2" aria-label="Gmail">
-                <i class="bi bi-envelope-fill" style="font-size: 2rem; color: #ea4335;"></i>
-            </a>
-            <a href="https://learn.microsoft.com/en-us/users/ralphsimonmabulay-3809/" target="_blank" class="mx-2" aria-label="Microsoft">
-                <i class="bi bi-microsoft" style="font-size: 2rem; color: #5e5e5e;"></i>
-            </a>
-            <a href="https://profile.indeed.com/p/ralphsimonm-gnn8nym" target="_blank" class="mx-2" aria-label="Website">
-                <i class="bi bi-globe" style="font-size: 2rem; color: #0a66c2;"></i>
-            </a>
-            <a href="https://www.coursera.org/user/ralphsimonmabulay" target="_blank" class="mx-2" aria-label="Coursera">
-                <img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/apple-touch-icon-76x76.png" alt="Coursera" style="height:2rem;vertical-align:middle;">
-            </a>
-        </div>
-
-        <div class="alert alert-info text-center mt-4" role="alert">
-            Feel free to reach out, ask questions, or explore more about my work. Let's connect and discuss exciting opportunities in the world of IT together!
-        </div>
-
-<footer class="mt-auto py-3">
-    <div class="text-center">
-        <a href="https://github.com/ChampRedRalph" target="_blank" class="text-dark text-decoration-none">
-            Made by <strong>ChampRedRalph</strong>
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-github ms-2" viewBox="0 0 16 16" style="vertical-align:middle;">
-                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-            </svg>
-        </a>
     </div>
-</footer>
-
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                <div class="row">
+                        <div class="modal-body">
+                            <div class="title-bar">
+                              <div class="col-md-12">
+                                <h2 class="text-center">Our Project</h2>
+                                <div class="heading-border"></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <img class="img-fluid img-centered" src="img/portfolio/p-3.jpg" alt="">
+                              </div>
+                              <div class="col-md-6">
+                                <p>Our new Project every processes had become fragmented; meaning quality and service were inconsistent. This lack of standardization was adversely impacting operating costs, productivity and customer satisfaction. For several years now Payfast has worked strategically with innovations as a means of developing new solutions, products and services. In line with this vision, Success was approached to find new payments solutions to offer Payfast customers on their website, including open invoice and partial payments options.</p>
+                                <ul class="list-inline item-details">
+                                    <li>Client:
+                                        <strong>
+                                          <a href="#">Techs Soft</a>
+                                        </strong>
+                                    </li>
+                                    <li>Date:
+                                        <strong>
+                                          <a href="#">April 2018</a>
+                                        </strong>
+                                    </li>
+                                    <li>Service:
+                                        <strong>
+                                          <a href="#">Web Development</a>
+                                        </strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                              </div>
+                          </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </div>
     </div>
-    <!-- Bootstrap JS Bundle CDN (optional, for interactive components) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                <div class="row">
+                        <div class="modal-body">
+                            <div class="title-bar">
+                              <div class="col-md-12">
+                                <h2 class="text-center">Our Project</h2>
+                                <div class="heading-border"></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <img class="img-fluid img-centered" src="img/portfolio/p-4.jpg" alt="">
+                              </div>
+                              <div class="col-md-6">
+                                <p>Our new Project every processes had become fragmented; meaning quality and service were inconsistent. This lack of standardization was adversely impacting operating costs, productivity and customer satisfaction. For several years now Payfast has worked strategically with innovations as a means of developing new solutions, products and services. In line with this vision, Success was approached to find new payments solutions to offer Payfast customers on their website, including open invoice and partial payments options.</p>
+                                <ul class="list-inline item-details">
+                                    <li>Client:
+                                        <strong>
+                                          <a href="#">Techs Soft</a>
+                                        </strong>
+                                    </li>
+                                    <li>Date:
+                                        <strong>
+                                          <a href="#">April 2018</a>
+                                        </strong>
+                                    </li>
+                                    <li>Service:
+                                        <strong>
+                                          <a href="#">Web Development</a>
+                                        </strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                              </div>
+                          </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                <div class="row">
+                        <div class="modal-body">
+                            <div class="title-bar">
+                              <div class="col-md-12">
+                                <h2 class="text-center">Our Project</h2>
+                                <div class="heading-border"></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <img class="img-fluid img-centered" src="img/portfolio/p-5.jpg" alt="">
+                              </div>
+                              <div class="col-md-6">
+                                <p>Our new Project every processes had become fragmented; meaning quality and service were inconsistent. This lack of standardization was adversely impacting operating costs, productivity and customer satisfaction. For several years now Payfast has worked strategically with innovations as a means of developing new solutions, products and services. In line with this vision, Success was approached to find new payments solutions to offer Payfast customers on their website, including open invoice and partial payments options.</p>
+                                <ul class="list-inline item-details">
+                                    <li>Client:
+                                        <strong>
+                                          <a href="#">Techs Soft</a>
+                                        </strong>
+                                    </li>
+                                    <li>Date:
+                                        <strong>
+                                          <a href="#">April 2018</a>
+                                        </strong>
+                                    </li>
+                                    <li>Service:
+                                        <strong>
+                                          <a href="#">Web Development</a>
+                                        </strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                <div class="row">
+                        <div class="modal-body">
+                            <div class="title-bar">
+                              <div class="col-md-12">
+                                <h2 class="text-center">Our Project</h2>
+                                <div class="heading-border"></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <img class="img-fluid img-centered" src="img/portfolio/p-6.jpg" alt="">
+                              </div>
+                              <div class="col-md-6">
+                                <p>Our new Project every processes had become fragmented; meaning quality and service were inconsistent. This lack of standardization was adversely impacting operating costs, productivity and customer satisfaction. For several years now Payfast has worked strategically with innovations as a means of developing new solutions, products and services. In line with this vision, Success was approached to find new payments solutions to offer Payfast customers on their website, including open invoice and partial payments options.</p>
+                                <ul class="list-inline item-details">
+                                    <li>Client:
+                                        <strong>
+                                          <a href="#">Techs Soft</a>
+                                        </strong>
+                                    </li>
+                                    <li>Date:
+                                        <strong>
+                                          <a href="#">April 2018</a>
+                                        </strong>
+                                    </li>
+                                    <li>Service:
+                                        <strong>
+                                          <a href="#">Web Development</a>
+                                        </strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>    
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                <div class="row">
+                        <div class="modal-body">
+                            <div class="title-bar">
+                              <div class="col-md-12">
+                                <h2 class="text-center">Our Project</h2>
+                                <div class="heading-border"></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <img class="img-fluid img-centered" src="img/portfolio/p-7.jpg" alt="">
+                              </div>
+                              <div class="col-md-6">
+                                <p>Our new Project every processes had become fragmented; meaning quality and service were inconsistent. This lack of standardization was adversely impacting operating costs, productivity and customer satisfaction. For several years now Payfast has worked strategically with innovations as a means of developing new solutions, products and services. In line with this vision, Success was approached to find new payments solutions to offer Payfast customers on their website, including open invoice and partial payments options.</p>
+                                <ul class="list-inline item-details">
+                                    <li>Client:
+                                        <strong>
+                                          <a href="#">Techs Soft</a>
+                                        </strong>
+                                    </li>
+                                    <li>Date:
+                                        <strong>
+                                          <a href="#">April 2018</a>
+                                        </strong>
+                                    </li>
+                                    <li>Service:
+                                        <strong>
+                                          <a href="#">Web Development</a>
+                                        </strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                <div class="row">
+                        <div class="modal-body">
+                            <div class="title-bar">
+                              <div class="col-md-12">
+                                <h2 class="text-center">Our Project</h2>
+                                <div class="heading-border"></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <img class="img-fluid img-centered" src="img/portfolio/p-8.jpg" alt="">
+                              </div>
+                              <div class="col-md-6">
+                                <p>Our new Project every processes had become fragmented; meaning quality and service were inconsistent. This lack of standardization was adversely impacting operating costs, productivity and customer satisfaction. For several years now Payfast has worked strategically with innovations as a means of developing new solutions, products and services. In line with this vision, Success was approached to find new payments solutions to offer Payfast customers on their website, including open invoice and partial payments options.</p>
+                                <ul class="list-inline item-details">
+                                    <li>Client:
+                                        <strong>
+                                          <a href="#">Techs Soft</a>
+                                        </strong>
+                                    </li>
+                                    <li>Date:
+                                        <strong>
+                                          <a href="#">April 2018</a>
+                                        </strong>
+                                    </li>
+                                    <li>Service:
+                                        <strong>
+                                          <a href="#">Web Development</a>
+                                        </strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                <div class="row">
+                        <div class="modal-body">
+                            <div class="title-bar">
+                              <div class="col-md-12">
+                                <h2 class="text-center">Our Project</h2>
+                                <div class="heading-border"></div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <img class="img-fluid img-centered" src="img/portfolio/p-9.jpg" alt="">
+                              </div>
+                              <div class="col-md-6">
+                                <p>Our new Project every processes had become fragmented; meaning quality and service were inconsistent. This lack of standardization was adversely impacting operating costs, productivity and customer satisfaction. For several years now Payfast has worked strategically with innovations as a means of developing new solutions, products and services. In line with this vision, Success was approached to find new payments solutions to offer Payfast customers on their website, including open invoice and partial payments options.</p>
+                                <ul class="list-inline item-details">
+                                    <li>Client:
+                                        <strong>
+                                          <a href="#">Techs Soft</a>
+                                        </strong>
+                                    </li>
+                                    <li>Date:
+                                        <strong>
+                                          <a href="#">April 2018</a>
+                                        </strong>
+                                    </li>
+                                    <li>Service:
+                                        <strong>
+                                          <a href="#">Web Development</a>
+                                        </strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>    
+
+
+    <!-- Global javascript -->
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/counter/jquery.waypoints.min.js"></script>
+    <script src="js/counter/jquery.counterup.min.js"></script>
+    <script src="js/custom.js"></script>
     <script>
-        // Theme toggle logic
-        const btn = document.getElementById('themeToggle');
-        const body = document.getElementById('mainBody');
-        let darkMode = false;
+        $(document).ready(function(){
 
-        // Load theme from localStorage
-        if (localStorage.getItem('theme') === 'dark') {
-            body.classList.add('dark-mode');
-            btn.innerHTML = '<i class="bi bi-sun"></i>';
-            darkMode = true;
-        }
-
-        btn.addEventListener('click', function() {
-            darkMode = !darkMode;
-            if (darkMode) {
-                body.classList.add('dark-mode');
-                btn.innerHTML = '<i class="bi bi-sun"></i>';
-                localStorage.setItem('theme', 'dark');
-            } else {
-                body.classList.remove('dark-mode');
-                btn.innerHTML = '<i class="bi bi-moon"></i>';
-                localStorage.setItem('theme', 'light');
+        $(".filter-b").click(function(){
+            var value = $(this).attr('data-filter');
+            if(value == "all")
+            { 
+                $('.filter').show('1000');
+            }
+            else
+            { 
+                $(".filter").not('.'+value).hide('3000');
+                $('.filter').filter('.'+value).show('3000');
             }
         });
-    </script>
+        
+        if ($(".filter-b").removeClass("active")) {
+          $(this).removeClass("active");
+        }
+        $(this).addClass("active");
+        });
+
+        // SKILLS
+        $(function () {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 2000
+            });
+
+        });
+    </script> 
 </body>
+
 </html>
