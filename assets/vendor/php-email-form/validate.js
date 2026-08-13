@@ -55,21 +55,22 @@
       body: formData,
       headers: {'X-Requested-With': 'XMLHttpRequest'}
     })
-    .then(response => {
+    .then(async response => {
       if( response.ok ) {
-        return response.text();
-      } else {
-        throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
-      }
-    })
-    .then(data => {
-      thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.trim() == 'OK') {
+        thisForm.querySelector('.loading').classList.remove('d-block');
         thisForm.querySelector('.sent-message').classList.add('d-block');
-        thisForm.reset(); 
-      } else {
-        throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
+        thisForm.reset();
+        return;
       }
+
+      const contentType = (response.headers.get('content-type') || '').toLowerCase();
+      if (contentType.includes('application/json')) {
+        const data = await response.json();
+        throw new Error(data && data.error ? data.error : `${response.status} ${response.statusText} ${response.url}`);
+      }
+
+      const text = await response.text();
+      throw new Error(text || `${response.status} ${response.statusText} ${response.url}`);
     })
     .catch((error) => {
       displayError(thisForm, error);
